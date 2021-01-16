@@ -1,0 +1,16 @@
+## Button config for STYLUS
+STYLUS:
+  Button:
+    1: "button +1"
+    2: "button +2"
+    3: "button +3"
+    8: "button +8"
+
+## Button config for PAD
+PAD:
+  Button:
+    1: "button +1"
+    2: "button +2"
+    3: "button +3"
+    8:
+      key: "ctrl z"
