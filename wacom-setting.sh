@@ -1,9 +1,11 @@
+#!/bin/bash
+
+###
 ### wacom-setting.sh
 ###
 ### Copyright: Jun Yoshida, 2021
 ### License: CC0 (see LICENSE for details)
 
-#!/bin/bash
 
 # The following is based on the code snippet from
 # https://stackoverflow.com/a/21189044/12889769
@@ -27,6 +29,7 @@ function parse_yaml {
     }'
 }
 
+# Get device IDs of wacom devices of a specific type.
 function get_wacom_id {
     xsetwacom --list devices | grep "type: $1" | sed -e "s|^.*id:[[:space:]]*\([0-9]*\).*|\1|"
 }
